@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import useWordGame from "./useWordGame.js"
 
 function App() {
+  const {handleChange, 
+        textBoxRef, 
+        isCountStarted, 
+        startGame, 
+        timeRemaining, 
+        wordCount,
+        text} = useWordGame()
+        
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>How many words can you type?</h1>
+      <textarea 
+        value={text}
+        onChange={handleChange}
+        ref={textBoxRef}
+        disabled={!isCountStarted} />
+      <button onClick={startGame}
+              disabled={isCountStarted}>
+                {timeRemaining > 0 ? "Start" : "Restart"}
+      </button>
+  <h2>Time Remainging: {timeRemaining}</h2>
+      <h2>Total Words: {wordCount}</h2>
     </div>
-  );
+  )
 }
 
 export default App;

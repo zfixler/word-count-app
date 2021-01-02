@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/word-count-app/static/css/main.7095fb1c.chunk.css",
+    "main.js": "/word-count-app/static/js/main.920b6a41.chunk.js",
+    "main.js.map": "/word-count-app/static/js/main.920b6a41.chunk.js.map",
+    "runtime-main.js": "/word-count-app/static/js/runtime-main.9403c6ec.js",
+    "runtime-main.js.map": "/word-count-app/static/js/runtime-main.9403c6ec.js.map",
+    "static/js/2.d0fd1fc8.chunk.js": "/word-count-app/static/js/2.d0fd1fc8.chunk.js",
+    "static/js/2.d0fd1fc8.chunk.js.map": "/word-count-app/static/js/2.d0fd1fc8.chunk.js.map",
+    "index.html": "/word-count-app/index.html",
+    "static/css/main.7095fb1c.chunk.css.map": "/word-count-app/static/css/main.7095fb1c.chunk.css.map",
+    "static/js/2.d0fd1fc8.chunk.js.LICENSE.txt": "/word-count-app/static/js/2.d0fd1fc8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9403c6ec.js",
+    "static/js/2.d0fd1fc8.chunk.js",
+    "static/css/main.7095fb1c.chunk.css",
+    "static/js/main.920b6a41.chunk.js"
+  ]
+}

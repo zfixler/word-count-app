@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu Mono', monospace;
-  background-color: #f3f3f3
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #C5E2E7;
+  color: #11697A;
 }
 
 h1 {
@@ -12,10 +13,11 @@ h1 {
   letter-spacing: 1px;
   margin: 0;
   padding: 0 2rem;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 0;
   padding-bottom: .5em;
 }
@@ -36,23 +38,43 @@ textarea {
   height: 250px;
   margin: 1.5em;
   padding: .5em;
+  border: none;
   border-radius: .75em;
-  border: 2px black solid;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+  background-color: white;
   resize: none;
 
 }
 
 button {
   font-family: inherit;
+  color: inherit;
   font-size: 2.5rem;
   padding: .25em 1em;
   cursor: pointer;
   margin-bottom: .3em;
-  border-radius: .2em;
-  border: 2px black solid;
-  background: white;
+  border-radius: 5em;
+  background: #FFA62B;
+  border: none;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+  transform: scale(1);
+  transition: transform 30ms;
+}
+
+button:hover {
+  transform: scale(1.1)
 }
 
 button:disabled {
   cursor: not-allowed;
+  background-color: darkgrey;
+}
+
+@media (max-width: 600px){
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
